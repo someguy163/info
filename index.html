@@ -1,534 +1,398 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko" data-theme="light">
     <head>
         <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-        <meta name="description" content="" />
-        <meta name="author" content="" />
-        <title>저를 소개합니다!</title>
-        <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico" />
-        <!-- Font Awesome icons (free version)-->
-        <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
-        <!-- Google fonts-->
-        <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700" rel="stylesheet" type="text/css" />
-        <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i" rel="stylesheet" type="text/css" />
-        <!-- Core theme CSS (includes Bootstrap)-->
-        <link href="styles.css" rel="stylesheet" />
-        <style>
-            .container {
-                display: flex;
-                flex-wrap: wrap;
-                gap: 20px; /* 가로줄 간격을 추가 */
-            }
-            .column {
-                flex: 1;
-                min-width: 45%;
-                box-sizing: border-box;
-                padding: 10px;
-                margin: 10px; /* 각 열 간격을 추가 */
-            }
-            .list-inline-item {
-                list-style: none;
-                display: inline-block;
-                margin: 5px;
-            }
-            img {
-                width: 70px;
-                height: 70px;
-            }
-        </style>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="description" content="백엔드 개발자 박주형의 포트폴리오. Java, Spring Boot 기반 업무 시스템 개발 프로젝트와 이력." />
+        <meta name="author" content="박주형" />
+        <title>박주형 · 백엔드 개발자</title>
+
+        <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='22' fill='%232743F0'/><text x='50' y='70' font-size='58' font-family='sans-serif' font-weight='700' fill='white' text-anchor='middle'>박</text></svg>" />
+
+        <link rel="preconnect" href="https://cdn.jsdelivr.net" />
+        <link rel="stylesheet" as="style" crossorigin
+              href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css" />
+        <link rel="stylesheet" href="styles.css" />
     </head>
-    <body id="page-top">
-        <!-- Navigation-->
-        <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
-            <a class="navbar-brand js-scroll-trigger" href="#page-top">
-                <span class="d-block d-lg-none">박주형</span>
-                <span class="d-none d-lg-block"><img class="img-fluid img-profile rounded-circle mx-auto mb-4" src="박주형_증명사진.jpg" alt="..." /></span>
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
-            <div class="collapse navbar-collapse" id="navbarResponsive">
-                <ul class="navbar-nav">
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#about">소개</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#education">학력 , 이력 , 자격증</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#skills">사용가능 기술</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#experience">프로젝트</a></li>
-                    <!-- <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#list">경력</a></li> -->
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#interests">자기소개</a></li>
-                    <!-- <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#master">자격증</a></li> -->
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#awards">장학금내역</a></li>
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                </ul>
-            </div>
-        </nav>
-        <!-- Page Content-->
-        <div class="container-fluid p-0">
-            <!-- About-->
-            <section class="resume-section" id="about">
-                <div class="resume-section-content">
-                    <h1 class="mb-0">
-                        박주형
-                        <span class="text-primary"> Park Ju Hyeong</span>
-                    </h1>
-                   <div class="subheading mb-5">
-                        경기도 화성시 거주 · 010 - 4064 - 8689 ·
-                        <a href="">jah05159@naver.com</a>
-                        <br><a href="https://someguy163.github.io/showMyinfo/">프로젝트 포트폴리오</a>
-                    </div>
-                   
-                    <!-- <p class="lead mb-5">I am experienced in leveraging agile frameworks to provide a robust synopsis for high level overviews. Iterative approaches to corporate strategy foster collaborative thinking to further the overall value proposition.</p> -->
-                    <div class="social-icons">
-                        <!-- <a class="social-icon" href="https://instagram.com/zu_h0?igshid=MWI4MTIyMDE="><i class="fab fa-linkedin-in"></i></a> -->
-                        <!-- <a class="social-icon" href="#!"><i class="fab fa-github"></i></a>
-                        <a class="social-icon" href="#!"><i class="fab fa-twitter"></i></a>
-                        <a class="social-icon" href="#!"><i class="fab fa-facebook-f"></i></a>
-                    </div> -->
+
+    <body>
+        <a class="skip-link" href="#main">본문 바로가기</a>
+
+        <button class="rail-toggle" type="button" aria-expanded="false" aria-controls="rail">
+            <span class="rail-toggle__bars" aria-hidden="true"></span>
+            <span class="rail-toggle__label">메뉴</span>
+        </button>
+
+        <!-- 좌측 고정 레일 -->
+        <aside class="rail" id="rail">
+            <div class="rail__inner">
+                <a class="identity" href="#top">
+                    <img class="identity__photo" src="박주형_증명사진.jpg" alt="박주형 프로필 사진" width="96" height="96" />
+                    <span class="identity__text">
+                        <strong>박주형</strong>
+                        <span>백엔드 개발자</span>
+                    </span>
+                </a>
+
+                <nav class="rail__nav" aria-label="섹션 목차">
+                    <ol>
+                        <li><a href="#top">소개</a></li>
+                        <li><a href="#projects">프로젝트</a></li>
+                        <li><a href="#skills">기술</a></li>
+                        <li><a href="#education">학력 · 교육 · 자격</a></li>
+                        <li><a href="#about">자기소개</a></li>
+                        <li><a href="#awards">장학</a></li>
+                    </ol>
+                </nav>
+
+                <div class="rail__contact">
+                    <a href="tel:01040648689">010-4064-8689</a>
+                    <a href="mailto:jah05159@naver.com">jah05159@naver.com</a>
+                    <span>경기도 화성시</span>
                 </div>
+
+                <button class="theme-toggle" type="button" aria-pressed="false">
+                    <span class="theme-toggle__dot" aria-hidden="true"></span>
+                    <span class="theme-toggle__label">다크 모드</span>
+                </button>
+            </div>
+        </aside>
+
+        <main class="main" id="main">
+            <div class="progress" aria-hidden="true"><span></span></div>
+
+            <!-- 소개 -->
+            <section class="hero" id="top">
+                <h1 class="hero__name">박주형</h1>
+                <p class="hero__role">백엔드 개발자</p>
+                <p class="hero__lead">
+                    Java와 Spring Boot로 발주부터 출고까지 흐름이 끊기지 않는 업무 시스템을 만듭니다.
+                    화면 하나가 아니라 프로세스 전체가 도는지를 먼저 확인합니다.
+                </p>
+
+                <p class="hero__links">
+                    <a href="https://someguy163.github.io/showMyinfo/" target="_blank" rel="noopener">다른 포트폴리오 보기</a>
+                    <a href="mailto:jah05159@naver.com">메일 보내기</a>
+                </p>
             </section>
-            <hr class="m-0" />
-            <section class="resume-section" id="education">
-                <div class="resume-section-content">
-                    <h3 class="mb-4">학력</h3>
-                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
 
-                    </div>
-                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-                        <div class="flex-grow-1">
-                            <h3 class="mb-0">백석대학교</h3>
-                            <div class="subheading mb-3">컴퓨터공학부</div>
-                            <div>소프트웨어학과</div>
-                            <p>졸업학점 : 3.24 </p>
+            <!-- 프로젝트 -->
+            <section class="section" id="projects">
+                <header class="section__head">
+                    <h2>프로젝트</h2>
+                    <p>2021년부터 2024년까지 6개</p>
+                </header>
+
+                <ol class="projects">
+                    <li class="project project--lead">
+                        <div class="project__meta">
+                            <span class="badge">팀</span>
+                            <time>2024.05 – 06</time>
                         </div>
-                        <div class="flex-shrink-0"><span class="text-primary"> 2017.3 ~ 2023.02</span></div>
-                    </div>
-                    <div class="d-flex flex-column flex-md-row justify-content-between">
-                        <div class="flex-grow-1">
-                            <h3 class="mb-0">능동고등학교</h3>
-                            <div class="subheading mb-3"></div>
-                            <!-- <p>GPA: 3.56</p> -->
+                        <div class="project__body">
+                            <h3>구매조달 시스템</h3>
+                            <p>
+                                계정 권한을 나눠 제품·업체를 등록하고, 제품에 맞는 품목으로 계약까지 진행하는 시스템입니다.
+                                도면과 업체를 등록해 계약을 완료하면 발주 · 진척검수 · 입고 · 출고 프로세스로 이어지고,
+                                월별 · 부류별 출고금액을 집계해 볼 수 있습니다.
+                            </p>
+                            <ul class="tags">
+                                <li>Java</li><li>Spring Boot</li><li>Thymeleaf</li><li>MariaDB</li><li>Bootstrap</li><li>JavaScript</li>
+                            </ul>
+                            <p class="project__links">
+                                <a href="project/CONNECT.pdf">발표 자료 (PDF)</a>
+                            </p>
                         </div>
-                        <div class="flex-shrink-0"><span class="text-primary">2014.3 ~ 2017.2</span></div>
-                    </div>
+                    </li>
 
-                    <hr>
-                    <br>
-                    <br>
+                    <li class="project">
+                        <div class="project__meta">
+                            <span class="badge">팀</span>
+                            <time>2024.03 – 05</time>
+                        </div>
+                        <div class="project__body">
+                            <h3>운동easy</h3>
+                            <p>
+                                운동을 시작하기 어려운 사용자를 위한 운동 영상 서비스입니다.
+                                관리자가 승인한 트레이너만 영상을 올리고 상담을 받을 수 있으며, 상담을 통해 일정을 잡습니다.
+                                부적합한 영상은 사용자가 신고하면 관리자에게 전달되어 삭제됩니다.
+                            </p>
+                            <ul class="tags">
+                                <li>Java</li><li>Spring Boot</li><li>JSP</li><li>MariaDB</li><li>Bootstrap</li><li>JavaScript</li>
+                            </ul>
+                            <p class="project__links">
+                                <a href="project/운동easy_발표PPT.pdf">발표 자료 (PDF)</a>
+                            </p>
+                        </div>
+                    </li>
 
-                    <!-- ------------------------- -->
-                    <h3 class="mb-4">교육</h3>
-                    <div class="d-flex flex-column flex-md-row justify-content-between">
-                    <div class="flex-grow-1">
-                        <h5 class="mb-0">엠아이티능력 개발원</h3>
-                        <br>
-                        <span>과정명 : 클라우드 기반의 자바 웹 애플리케이션 개발</span>
-                        <br>
-                        <br>
-                        <ul class="fa-ul mb-0">
-                            <li>
-                                <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
-                                개근상
-                                <br>
-                                <div class="flex-shrink-0"><span class="text-primary"> 2024-06-18 </span></div>
-                            </li>
-                            <br>
-                            <li>
-                                <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
-                                성적우수상
-                                <br>
-                                <div class="flex-shrink-0"><span class="text-primary"> 2024-06-18 </span></div>
-                            </li>
+                    <li class="project">
+                        <div class="project__meta">
+                            <span class="badge">팀</span>
+                            <time>2022.09 – 12</time>
+                        </div>
+                        <div class="project__body">
+                            <h3>레식피 <span class="project__note">캡스톤디자인</span></h3>
+                            <p>
+                                사용자가 입력한 식자재의 유통기한과 특징을 보여 주고,
+                                웹 크롤링으로 모은 레시피를 가공해 가진 재료에 맞는 레시피를 추천합니다.
+                            </p>
+                            <ul class="tags">
+                                <li>Java</li><li>Spring Boot</li><li>웹 크롤링</li><li>Bootstrap</li>
+                            </ul>
+                            <p class="project__links">
+                                <a href="project/캡스톤 파일.zip">자료 내려받기 (ZIP)</a>
+                            </p>
+                        </div>
+                    </li>
+
+                    <li class="project">
+                        <div class="project__meta">
+                            <span class="badge">팀</span>
+                            <time>2022.09 – 12</time>
+                        </div>
+                        <div class="project__body">
+                            <h3>팀 파일 관리 사이트</h3>
+                            <p>
+                                그룹을 만들고 가입·탈퇴할 수 있으며, 가입한 그룹 안에서만 그룹원끼리 파일을 공유합니다.
+                                프레임워크 없이 JSP와 서블릿으로 요청 처리 흐름을 직접 구현했습니다.
+                            </p>
+                            <ul class="tags">
+                                <li>Java</li><li>JSP</li><li>Servlet</li><li>Bootstrap</li><li>JavaScript</li>
+                            </ul>
+                            <p class="project__links">
+                                <a href="project/JSP_MBTI.pdf">발표 자료 (PDF)</a>
+                                <a href="project/JSP_프로젝트_소스코드.zip">소스코드 (ZIP)</a>
+                            </p>
+                        </div>
+                    </li>
+
+                    <li class="project">
+                        <div class="project__meta">
+                            <span class="badge badge--solo">개인</span>
+                            <time>2021.09 – 12</time>
+                        </div>
+                        <div class="project__body">
+                            <h3>서울 맛집 위치 분석</h3>
+                            <p>
+                                공공데이터 포털 오픈 API로 받은 CSV를 Jupyter Notebook에서 가공했습니다.
+                                카페 상권의 월 지출 내역을 기준으로 소득분위를 1~9분위로 나눠 등급을 매기고,
+                                상위 3개 상권의 위치와 주변 업종 구성을 분석했습니다.
+                            </p>
+                            <ul class="tags">
+                                <li>Python</li><li>Jupyter</li><li>공공데이터 API</li>
+                            </ul>
+                            <p class="project__links">
+                                <a href="project/20172048 박주형 빅데이터 기말 프로젝트.pdf">분석 보고서 (PDF)</a>
+                            </p>
+                        </div>
+                    </li>
+
+                    <li class="project">
+                        <div class="project__meta">
+                            <span class="badge badge--solo">개인</span>
+                            <time>2021.09 – 12</time>
+                        </div>
+                        <div class="project__body">
+                            <h3>칼로리 기록 앱 UI/UX</h3>
+                            <p>
+                                하루 섭취 칼로리를 기록하고 분석하는 앱을 디자인했습니다.
+                                파워목업과 카카오 오븐으로 프로토타이핑한 뒤, 포토샵으로 UI와 버튼, 폰트를 직접 만들었습니다.
+                            </p>
+                            <ul class="tags">
+                                <li>프로토타이핑</li><li>카카오 오븐</li><li>Photoshop</li>
+                            </ul>
+                            <p class="project__links">
+                                <a href="project/UIUX 기말과제 20172048 박주형.pdf">기획 자료 (PDF)</a>
+                                <a href="project/UIUX 프로토타이핑 시연 20172048 박주형.pdf">시연 자료 (PDF)</a>
+                                <a href="project/UIUX 프로로타이핑 시연영상 20172048 박주형..zip">시연 영상 (ZIP)</a>
+                            </p>
+                        </div>
+                    </li>
+                </ol>
+            </section>
+
+            <!-- 기술 -->
+            <section class="section" id="skills">
+                <header class="section__head">
+                    <h2>기술</h2>
+                    <p>프로젝트에서 직접 사용해 본 기술입니다</p>
+                </header>
+
+                <div class="stacks">
+                    <div class="stack">
+                        <h3>백엔드</h3>
+                        <ul>
+                            <li><img src="java (1).png" alt="" /> Java</li>
+                            <li><img src="spring.png" alt="" /> Spring</li>
+                            <li><img src="springboots2.jpg" alt="" /> Spring Boot</li>
                         </ul>
                     </div>
-                    <div class="flex-shrink-0"><span class="text-primary"> 2023.12 ~ 2024.06</span>
+                    <div class="stack">
+                        <h3>프론트엔드</h3>
+                        <ul>
+                            <li><img src="html-5.png" alt="" /> HTML5</li>
+                            <li><img src="css.png" alt="" /> CSS3</li>
+                            <li><img src="bootstrap.png" alt="" /> Bootstrap</li>
+                            <li><img src="jsp.png" alt="" /> JSP</li>
+                            <li><img src="타임리프.png" alt="" /> Thymeleaf</li>
+                        </ul>
                     </div>
-                </div>
-                    
-
-
-<br>
-<br>
-                    <h3 class="mb-4">자격증</h3>
-                    <ul class="fa-ul mb-0">
-                        <li>
-                            <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
-                            SQLD 개발자
-                            <br>
-                            <div class="flex-shrink-0"><span class="text-primary"> 2024-06-14 </span></div>
-                        </li>
-                    </ul>
-
-                    <ul class="fa-ul mb-0">
-                        <li>
-                            <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
-                            정보처리기사 필기 (실기 준비중)
-                            <br>
-                        <div class="flex-shrink-0"><span class="text-primary"> 2022-08</span></div>
-                        </li>
-                    </ul>
-                    <br>
-
-                    <!-- <hr> -->
-                    <!-- <div class="resume-section-content">
-                        <br>
-                        <br>
-                        <h3 class="mb-5">경력사항</h3>
-                        <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-                            <div class="flex-grow-1">
-                                <h3 class="mb-0">지트</h3>
-
-                                 <br>
-                                <p>부서 : 유지보수</p>
-                            </div>
-                            <div class="flex-shrink-0"><span class="text-primary">2023-08-07 ~ 2023-11-20</span></div>
-                        </div>
-                    
-                    </div> -->
-                    
-                </div>
-            </section>
-
-            <hr class="m-0" />
-            <section class="resume-section" id="skills">
-                <div class="resume-section-content">
-                    <h2 class="mb-5">사용기술</h2>
-                    <div class="subheading mb-3">Programming Languages & Tools % frameworks</div>
-                    <ul class="list-inline dev-icons">
-                        <div class="container">
-                            <div class="column">
-                                <h4 class="mb-3">백엔드</h4>
-                                <li class="list-inline-item"><img src="springboots2.jpg" alt=""></li>
-                                <li class="list-inline-item"><img src="spring.png" alt=""></li>
-                                <li class="list-inline-item"><img src="java (1).png" alt=""></li>
-                            </div>
-                            <div class="column">
-                                <h4 class="mb-3">프론트</h4>
-                                <li class="list-inline-item"><img src="bootstrap.png" alt=""></li>
-                                <li class="list-inline-item"><img src="html-5.png" alt=""></li>
-                                <li class="list-inline-item"><img src="css.png" alt=""></li>
-                                <li class="list-inline-item"><img src="jsp.png" alt=""></li>
-                                <li class="list-inline-item"><img src="타임리프.png" alt=""></li>
-                            </div>
-                            <div class="column">
-                                <h4 class="mb-3">DB</h4>
-                                <li class="list-inline-item"><img src="postgre.png" alt=""></li>
-                                <li class="list-inline-item"><img src="mariaDB.png" alt=""></li>
-                                <li class="list-inline-item"><img src="db.png" alt=""></li>
-                            </div>
-                            <div class="column">
-                                <h4 class="mb-3">협업도구</h4>
-                                <li class="list-inline-item"><img src="git.png" alt=""></li>
-                                <li class="list-inline-item"><img src="fork.png" alt=""></li>
-                            </div>
-                            <div class="column">
-                                <h4 class="mb-3">기타</h4>
-                                <li class="list-inline-item"><img src="python.png" alt=""></li>
-                                <li class="list-inline-item"><img src="eclipse.jpg" alt=""></li>
-                                <li class="list-inline-item"><img src="intellij3.webp" alt=""></li>
-                                <li class="list-inline-item"><img src="FileZilla_logo.svg.png" alt=""></li>
-                                <li class="list-inline-item"><img src="PuTTY.webp" alt=""></li>
-                                <li class="list-inline-item"><img src="리눅스.webp" alt=""></li>
-
-                            </div>
-                        </div>
-                        <p> </p>
-                        
-
-                    </ul>
-                    <!-- <div class="subheading mb-3">Workflow</div>
-                    <ul class="fa-ul mb-0"> -->
-                        <!-- <li>
-                            <span class="fa-li"><i class="fas fa-check"></i></span>
-                            Mobile-First, Responsive Design
-                        </li>
-                        <li>
-                            <span class="fa-li"><i class="fas fa-check"></i></span>
-                            Cross Browser Testing & Debugging
-                        </li>
-                        <li>
-                            <span class="fa-li"><i class="fas fa-check"></i></span>
-                            Cross Functional Teams
-                        </li>
-                        <li>
-                            <span class="fa-li"><i class="fas fa-check"></i></span>
-                            Agile Development & Scrum
-                        </li> -->
-                    </ul>
-                </div>
-            </section>
-
-
-
-            <hr class="m-0" />
-            <!-- Experience-->
-            <section class="resume-section" id="experience">
-                <div class="resume-section-content">
-                    <h2 class="mb-5">프로젝트</h2>
-
-                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-                        <div class="flex-grow-1">
-                            <h3 class="mb-0">Team Project</h3>
-
-                            <div class="subheading mb-3">구매조달 시스템</div>
-                            <p>서로다른 로그인계정으로 제품등록 , 업체등록진행하고 제품에 맞는 품목을 등록하고 계약을 진행하는 프로젝트입니다
-                                도면과 업체를 등록해서 계약완료를 진행하고 , 
-                                계약완료된 품목을 발주 , 진척검수 , 입고 , 출고 프로세스 과정을 진행하고 월별 , 부류별 출고금액을 확인할 수 있습니다
-                                <br>
-                                <br>사용기술 : Java , Javascripts , HTML , CSS , Bootstrap , SpringBoots frameworks , mariaDB , Thymeleaf
-                                <br>
-                                <br>
-                                <br>
-                                <a href="project/CONNECT.pdf">자료보기</a>
-                                <a href="http://mit305.iptime.org:9060/Con/login">배포주소 접속</a>
-                                <br>
-                                <p>ID : test1 , PW :1234 (업체등록 , 제품등록)</p>
-                                <br>
-                                <p>ID : test3 , PW :1234 (품목등록 , 계약 , 조달관리 , 입고 , 출고 프로세스)</p>
-                                <!-- 영상,소스코드 -->
-                            </p>
-                        </div>
-                        <div class="flex-shrink-0"><span class="text-primary">2024.05.10 ~ 2024.06.14</span></div>
+                    <div class="stack">
+                        <h3>데이터베이스</h3>
+                        <ul>
+                            <li><img src="mariaDB.png" alt="" /> MariaDB</li>
+                            <li><img src="postgre.png" alt="" /> PostgreSQL</li>
+                            <li><img src="db.png" alt="" /> SQL</li>
+                        </ul>
                     </div>
-
-
-                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-                        <div class="flex-grow-1">
-                            <h3 class="mb-0">Team Project</h3>
-
-                            <div class="subheading mb-3">운동이지(운동easy)</div>
-                            <p>운동하기 어려운 사용자들을 위한 운동영상제공 웹사이트 입니다 
-                                <br>관리자가 가입신청 들어온 트레이너만 운동영상을 등록해서 상담신청 받을수있습니다. 
-                                상담을 통해서 트레이너와 사용자가 일정을 잡을수있습니다. 
-                                부적합한 영상이 업로드 되었을시 사용자가 신고기능을 통해 관리자 계정으로 정보가 전송되고 , 
-                                관리자는 영상을 삭제할 수 있습니다.
-                                <br>
-                                <br>사용언어 : Java , Javascripts , HTML , CSS , Bootstrap , SpringBoots frameworks , JSP , mariaDB
-                                <br>
-                                <br>
-                                <br>
-                                <a href="project/운동easy_발표PPT.pdf">자료보기</a>
-                                <!-- <a href="http://192.168.35.8:9080/tr/tr_login">배포주소 접속</a> -->
-                                <!-- 영상,소스코드 -->
-                            </p>
-                        </div>
-                        <div class="flex-shrink-0"><span class="text-primary">2024.03.26 ~ 2024.05.02</span></div>
+                    <div class="stack">
+                        <h3>협업</h3>
+                        <ul>
+                            <li><img src="git.png" alt="" /> Git</li>
+                            <li><img src="fork.png" alt="" /> Fork</li>
+                        </ul>
                     </div>
-
-
-
-
-
-
-                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-                        <div class="flex-grow-1">
-                            <h3 class="mb-0">Team Project</h3>
-
-                            <div class="subheading mb-3">레식피 (캡스톤디자인)</div>
-                            <p>사용자가 직접 식자재에 대한 정보를 입력한후 그 식자재에 대한 유통기한과 특징을 볼수있습니다. 
-                                <br>웹크롤링을 통해 레시피를 가공해서 원하는 레시피를 제공합니다
-                                <br>
-                                <br>사용기술 : Java , Javascripts , HTML , CSS , Bootstrap , SpringBoots frameworks
-                                <br>
-                                <br>
-                                <br>
-                                <a href="project/캡스톤 파일.zip">자료보기</a>
-                                <!-- 영상,소스코드 -->
-                            </p>
-                        </div>
-                        <div class="flex-shrink-0"><span class="text-primary">2022.09.01 ~ 2022.12.22</span></div>
-                    </div>
-                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-                        <div class="flex-grow-1">
-                            <h3 class="mb-0">Team Project</h3>
-                            <div class="subheading mb-3">팀 파일 관리 사이트 (JSP와 서블릿)</div>
-                            <p>그룹을 만들어서 사용자가 그룹에 가입,탈퇴 할수있는 서비스를 제공합니다
-                                <br>가입한 그룹안에서만 그룹원들끼리만 파일공유가 가능한 서비스를 제공하는 사이트입니다
-                                <br>
-                                <br>사용기술 : Java , Javascripts , HTML , CSS , Bootstrap , JSP Servelet
-                                <br>
-                                <a href="project/JSP_프로젝트_소스코드.zip">파일 다운로드</a>
-                                <a href="project/JSP_MBTI.pdf">자료보기</a>
-
-                            </p>
-                        </div>
-                        <div class="flex-shrink-0"><span class="text-primary">2022.09 ~ 2022.12</span></div>
-                    </div>
-                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-                        <div class="flex-grow-1">
-                            <h3 class="mb-0">Solo Project</h3>
-                            <div class="subheading mb-3">서울맛집 위치 분석 (빅데이터)</div>
-                            <p>공공데이터 포털에서 제공하는 오픈 API를 제공받은후 jupyter notebook에서 CSV파일을 가공한후 원하는 데이터를 추출합니다
-                                <br>카페 상권의 월 지출내역을 기준으로 직접 소득분위를 1 ~ 9 분위로 나눈후 등급을 정해줍니다
-                                <br>등급에서 가공되어서 나온 상위 1 ~ 3등을 추출하고 위치가 어디인지 분석한후 그 주변상권들이 무엇이 있는지 보여줍니다.
-                                <br>
-                                <br>사용기술 : Python , Open API 
-                                <br>
-                                <a href="project/20172048 박주형 빅데이터 기말 프로젝트.pdf">자료보기</a>
-                                <br>
-                                <a href=""></a>
-                            </p>
-                        </div>
-                        <div class="flex-shrink-0"><span class="text-primary">2021.09 ~ 2021.12</span></div>
-                    </div>
-                    <div class="d-flex flex-column flex-md-row justify-content-between">
-                        <div class="flex-grow-1">
-                            <h3 class="mb-0">Solo Project</h3>
-                            <div class="subheading mb-3">나만의 어플리케이션 제작 (UI/UX 디자인)</div>
-                            <p>하루 섭취량에 대한 칼로리를 분석하는 어플을 디자인 하였습니다
-                                <br>파워포인트 파워목업, 카카오오븐을 통해서 어플리케이션에 대한 프로토타이핑을 진행하였습니다
-                                <br>진행한 프로토타이핑을 바탕으로 하여 포토샵을 사용하여 UI디자인, 버튼, 폰트 등을 직접 디자인하였습니다
-                                <br>
-                                <br>
-                                <a href="project/UIUX 기말과제 20172048 박주형.pdf">PPT</a>
-                                <br>
-                                <a href="project/UIUX 프로토타이핑 시연 20172048 박주형.pdf">시연 자료보기</a>
-                                <br>
-                                <a href="project/UIUX 프로로타이핑 시연영상 20172048 박주형..zip">시연영상</a>
-                            </p>
-                        </div>
-                        <div class="flex-shrink-0"><span class="text-primary">2021.09 ~ 2021.12</span></div>
+                    <div class="stack stack--wide">
+                        <h3>도구 · 환경</h3>
+                        <ul>
+                            <li><img src="intellij3.webp" alt="" /> IntelliJ IDEA</li>
+                            <li><img src="eclipse.jpg" alt="" /> Eclipse</li>
+                            <li><img src="python.png" alt="" /> Python</li>
+                            <li><img src="리눅스.webp" alt="" /> Linux</li>
+                            <li><img src="PuTTY.webp" alt="" /> PuTTY</li>
+                            <li><img src="FileZilla_logo.svg.png" alt="" /> FileZilla</li>
+                        </ul>
                     </div>
                 </div>
             </section>
 
+            <!-- 학력 · 교육 · 자격 -->
+            <section class="section" id="education">
+                <header class="section__head">
+                    <h2>학력 · 교육 · 자격</h2>
+                </header>
 
+                <ul class="records">
+                    <li class="record">
+                        <time>2023.12 – 2024.06</time>
+                        <div>
+                            <h3>엠아이티능력개발원</h3>
+                            <p class="record__sub">클라우드 기반의 자바 웹 애플리케이션 개발 과정</p>
+                            <ul class="notes">
+                                <li>성적우수상 <span>2024.06.18</span></li>
+                                <li>개근상 <span>2024.06.18</span></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="record">
+                        <time>2017.03 – 2023.02</time>
+                        <div>
+                            <h3>백석대학교 컴퓨터공학부</h3>
+                            <p class="record__sub">소프트웨어학과 · 졸업학점 3.24</p>
+                        </div>
+                    </li>
+                    <li class="record">
+                        <time>2014.03 – 2017.02</time>
+                        <div>
+                            <h3>능동고등학교</h3>
+                        </div>
+                    </li>
+                </ul>
 
-            <hr class="m-0" />
-            <!-- Interests-->
-            <section class="resume-section" id="interests">
-                <div class="resume-section-content">
-                    <h4 class="mb-5">성장과정</h4>
-                    <p>저는 초등학교 6학년 때 처음으로 스마트폰을 접하게 되었습니다. 중학교에 입학하면서 본격적으로 스마트폰을 사용하기 시작했고, 여러 웹사이트를 탐험하며 흥미를 느꼈습니다. 처음 접하는 디지털 세계가 신기하고 재미있었고, 자연스럽게 “이런 웹페이지와 서비스를 내가 직접 디자인하고 개발해보면 어떨까?”라는 생각이 들었습니다. 이 흥미는 저를 소프트웨어학과로 이끌었습니다.
+                <h3 class="subhead">자격증</h3>
+                <ul class="records records--tight">
+                    <li class="record">
+                        <time>2024.06.14</time>
+                        <div><h3>SQL 개발자 (SQLD)</h3></div>
+                    </li>
+                    <li class="record">
+                        <time>2022.08</time>
+                        <div>
+                            <h3>정보처리기사 필기</h3>
+                            <p class="record__sub">실기 준비 중</p>
+                        </div>
+                    </li>
+                </ul>
+            </section>
 
-                        소프트웨어학과에서 다양한 프로그래밍 언어를 배우며, 가장 기억에 남는 수업은 애플리케이션과 웹디자인, 데이터에 대한 프로젝트였습니다.
-                         포토샵과 파워포인트로 직접 목업을 제작하며 디자인을 구현하는 과정이 무척 재미있었습니다. 이 프로젝트로 A+라는 높은 점수를 받으며 자신감을 얻었고, 디자인뿐만 아니라 직접 프로그래밍으로 구현해보고 싶다는 목표를 가지게 되었습니다.</p>
-                    <!-- <p class="mb-0">When forced indoors, I follow a number of sci-fi and fantasy genre movies and television shows, I am an aspiring chef, and I spend a large amount of my free time exploring the latest technology advancements in the front-end web development world.</p> -->
-                    <br>
-                    <br>
-                    <h4 class="mb-5">성격의 장단점</h4>
-                    <p>“끈기”
+            <!-- 자기소개 -->
+            <section class="section" id="about">
+                <header class="section__head">
+                    <h2>자기소개</h2>
+                </header>
 
-                        저의 성격은 하나를 보면 끝까지 가보는 성격입니다.
-                        그 하나에 쉽게 빠지고 노력을 많이합니다. 
-                        적응을 하고 업무나 공부에 집중하게 되면 결과가 어떻던 결과물이 나오기전까지 끝까지 해봐서 결과물을 저의 눈으로 봐야 풀리는 성격을 가지고 있습니다. 
-                        잘 되지 않을 경우에는 업무를 하지 않을때도 생각을 종종하면서 “이렇게 하면 될까?” 라는 생각을 자주합니다. 
-                        그 생각을 바로바로 대입시켜보면서 문제를 해결하는 성격을 가졌습니다. 이 성격의 장점으로는 쉽게 포기하지않는다 라는것입니다. 
-                        문제가 발생했을 때 멈추는것이아니라 뒤돌아보면서 뒤의 과정이 맞나 라는 생각을 하면서 문제를 해결합니다. 
-                        </p>
-                    <!-- <p class="mb-0">When forced indoors, I follow a number of sci-fi and fantasy genre movies and television shows, I am an aspiring chef, and I spend a large amount of my free time exploring the latest technology advancements in the front-end web development world.</p> -->
-                <br>
-                <br>
-                <h4 class="mb-5">학교생활 및 경력사항</h4>
+                <article class="essay">
+                    <h3>성장 과정</h3>
                     <p>
-                        저는 “끈기”라는 성격을 바탕으로 창업동아리 CNI에 가입했습니다. 
-                        창업에 대한 관심보다는 “무엇을 하는 동아리일까?”라는 호기심에서 시작했습니다. 
-                        동아리 활동을 통해 학기마다 새로운 발명품을 조별로 구상하고 발표하는 활동에 참여했습니다. 
-                        학기 중 팀 프로젝트와 개인 프로젝트에 열심히 참여하며 좋은 결과를 얻어냈습니다.
-                        방학 동안에는 다양한 아르바이트를 하며 실무 경험을 쌓았습니다. 
-                        지하철 전력 차단기 제작, 물류센터 근무, 삼성반도체에서의 반도체 생산 과정 체험 등을 통해 다양한 산업 현장을 경험했습니다. 
-                        또한, 방학 동안 컴활 1급 자격증과 정보처리기사 자격증을 취득하기 위해 공부하며 자기계발에도 힘썼습니다.
-                        "끈기"라는 성격을 가지고 한번 깊에 공부해보자 라는 마음가짐을 가지고 
-                        "MIT능력 개발 교욱원"에 수강신청 하였습니다.
-                        교육원에서 제공하는 과정에서 여러 프로젝트를 경험하면서 많은것을 배우면서 취업할 준비가 완료되었다는 생각이 들었습니다.
-                        과정수강중에 SQLD 자격증을 취득했습니다.
-                        </p>
-                        <br>
-                        <br>
-                        <h4 class="mb-5">지원 동기 및 입사 포부</h4>
-                    <p>저의 목표는 사람들이 편리하게 사용할 수 있는 웹과 서비스를 만드는 것입니다. 
-                        <!-- 아직 서버에 배포하여 사람들에게 편리한 웹 서비스를 제공한 경험은 없지만,  -->
-                        비록 작은 서버에 배포해서 특정된 사람들만 사용하게 끔 배포를 한 경험을 가지고있습니다. 
-                        이것이 끝이 아닌 모든 사용자가 사용할 수 있는 규모의 프로젝트와 , 서버를 구축해서 다같이 사용할 수 있는 환경과 프로젝트를 만들어 제공하고싶습니다.
-                        그 부족함을 상사나 동료들에게 배우고자 하는 열린 자세를 가지고 있습니다. 열심히만 하는 것이 아니라, 
-                        잘하는 사람으로 성장하여 이 기업에 필요한 일원이 되고 싶습니다. 저의 끈기와 학습능력을 바탕으로, 
-                        기업의 목표 달성에 기여하고 , 클라이언트에게 더욱 나은 서비스를 제공하는 데 이바지하겠습니다.
+                        초등학교 6학년에 처음 스마트폰을 접했고, 중학교에 들어가면서 본격적으로 여러 웹사이트를 돌아다녔습니다.
+                        낯선 디지털 세계가 신기해서 “이런 웹페이지와 서비스를 내가 직접 만들어 보면 어떨까”라는 생각이 들었고,
+                        그 흥미가 저를 소프트웨어학과로 이끌었습니다.
                     </p>
-                
-                </div>
+                    <p>
+                        학과에서 여러 언어를 배우는 동안 가장 기억에 남은 건 애플리케이션과 웹 디자인, 데이터를 다루는 프로젝트였습니다.
+                        포토샵과 파워포인트로 목업을 만들며 디자인을 구현하는 과정이 재미있었고,
+                        A+를 받으며 얻은 자신감으로 디자인에서 멈추지 않고 직접 구현까지 해보자는 목표가 생겼습니다.
+                    </p>
+
+                    <h3>성격의 장단점</h3>
+                    <p class="pull">하나를 잡으면 결과를 볼 때까지 갑니다.</p>
+                    <p>
+                        한번 몰입하면 결과물이 나오기 전까지 손을 놓지 못하는 편입니다.
+                        잘 풀리지 않을 때는 일하지 않는 시간에도 “이렇게 하면 될까”를 떠올리고, 다음 날 바로 대입해 봅니다.
+                        문제가 생겼을 때 멈추기보다 앞선 과정을 되짚으며 어디서 어긋났는지 찾아 해결합니다.
+                        다만 하나에 깊이 빠지는 만큼, 우선순위를 자주 확인하며 속도를 조절하려 합니다.
+                    </p>
+
+                    <h3>학교생활 및 경력</h3>
+                    <p>
+                        “무엇을 하는 동아리일까”라는 호기심으로 창업동아리 CNI에 들어가, 학기마다 조별로 새로운 발명품을 구상하고 발표했습니다.
+                        학기 중에는 팀·개인 프로젝트에 집중해 결과를 남겼고, 방학에는 지하철 전력 차단기 제작, 물류센터,
+                        삼성반도체 생산 공정 등 여러 현장에서 일하며 실무 감각을 익혔습니다.
+                        같은 기간 컴퓨터활용능력 1급과 정보처리기사를 준비했습니다.
+                    </p>
+                    <p>
+                        제대로 한번 깊이 공부해 보자는 마음으로 엠아이티능력개발원 과정에 등록했고,
+                        여러 프로젝트를 거치며 실무에 들어갈 준비가 됐다고 느꼈습니다. 과정 중 SQLD 자격증을 취득했습니다.
+                    </p>
+
+                    <h3>지원 동기 및 입사 포부</h3>
+                    <p>
+                        제 목표는 사람들이 편하게 쓰는 웹과 서비스를 만드는 것입니다.
+                        아직은 작은 서버에 배포해 정해진 사용자만 쓰게 한 경험이지만,
+                        여기서 멈추지 않고 더 많은 사용자가 함께 쓸 수 있는 규모의 서비스와 서버를 만들고 싶습니다.
+                        부족한 부분은 동료와 선배에게 배우겠습니다.
+                        열심히만 하는 사람이 아니라 잘하는 사람으로 성장해, 클라이언트에게 더 나은 서비스를 제공하는 데 보탬이 되겠습니다.
+                    </p>
+                </article>
             </section>
 
-            <!-- <hr class="m-0" />
-            <section class="resume-section" id="master">
-                <div class="resume-section-content">
-
-
-                </div>
-            </section> -->
-
-
-            <hr class="m-0" />
-            <!-- Awards-->
-            <section class="resume-section" id="awards">
-                <div class="resume-section-content">
-                    <h2 class="mb-5">장학금 내역</h2>
-                    <ul class="fa-ul mb-0">
-                        <li>
-                            <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
-                            교수추천 장학금
-                            <br>
-                            <div class="flex-shrink-0"><span class="text-primary"> 2020.06 </span></div>
-                        </li>
-                        <li>
-                            <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
-                            과목 성적장학금
-                        </li>
-                        <!-- <li>
-                            <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
-                            1
-                            <sup>st</sup>
-                            Place - University of Colorado Boulder - Emerging Tech Competition 2009
-                        </li>
-                        <li>
-                            <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
-                            1
-                            <sup>st</sup>
-                            Place - University of Colorado Boulder - Adobe Creative Jam 2008 (UI Design Category)
-                        </li>
-                        <li>
-                            <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
-                            2
-                            <sup>nd</sup>
-                            Place - University of Colorado Boulder - Emerging Tech Competition 2008
-                        </li>
-                        <li>
-                            <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
-                            1
-                            <sup>st</sup>
-                            Place - James Buchanan High School - Hackathon 2006
-                        </li>
-                        <li>
-                            <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
-                            3
-                            <sup>rd</sup>
-                            Place - James Buchanan High School - Hackathon 2005
-                        </li> -->
-                    </ul>
-                </div>
+            <!-- 장학 -->
+            <section class="section" id="awards">
+                <header class="section__head">
+                    <h2>장학</h2>
+                </header>
+                <ul class="records records--tight">
+                    <li class="record">
+                        <time>2020.06</time>
+                        <div><h3>교수추천 장학금</h3></div>
+                    </li>
+                    <li class="record">
+                        <time>재학 중</time>
+                        <div><h3>과목 성적장학금</h3></div>
+                    </li>
+                </ul>
             </section>
 
-            <hr class="m-0" />
-            <!-- <section class="resume-section" id="list">
+            <footer class="foot">
+                <p>박주형 — 백엔드 개발자</p>
+                <p>
+                    <a href="mailto:jah05159@naver.com">jah05159@naver.com</a>
+                    <a href="tel:01040648689">010-4064-8689</a>
+                </p>
+            </footer>
+        </main>
 
-            </section> -->
-            
-            
-            
-
-        </div>
-        <!-- Bootstrap core JS-->
-         <script>
-            alert("소개 탭에 있는 '프로젝트 포트폴리오'를 통해서 다른 포트폴리오 경로로 이동가능합니다!");
-         </script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
-        <!-- Core theme JS-->
-        <script src="scripts.js">
-
-
-        </script>
+        <script src="scripts.js"></script>
     </body>
 </html>
